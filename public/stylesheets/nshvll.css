@@ -31,7 +31,7 @@ input[type="file"] { color:#000; font-size:14px; margin:10px 0 0 0; }
 #pagination .more a:hover { background-position:0 -74px; }
 #pagination .loading { background:url('/images/loading.gif') no-repeat 0 0; padding:0 0 0 28px; }
 
-.main_h1 { color:#c3c1be; font-size:125px; font-weight:bold; float:left; line-height:100%; margin:0 10px 10px 0; 
+.main_h1 { color:#c3c1be; font-size:125px; font-weight:bold 50px/100%; 
   position:absolute; top:0; left:0; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);
   
   }
