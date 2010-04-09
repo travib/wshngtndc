@@ -4,13 +4,13 @@ require 'railsmachine/recipes'
 # REQUIRED VARIABLES
 # =============================================================================
 # The name of your application.
-set :application, "nshvll"
+set :application, "wshngtndc"
 
 # Target directory for the application on the web and app servers.
 set :deploy_to, "/var/www/apps/#{application}"
 
 # Primary domain name of your application. Used as a default for all server roles.
-set :domain, "nshvll.org"
+set :domain, "wshngtndc.org"
 
 # Login user for ssh.
 set :user, "deploy"
@@ -43,7 +43,7 @@ set :database, "mysql"   # mysql or postgresql
 # SCM OPTIONS
 # =============================================================================
 set :scm, :git    # :subversion or :git
-set :repository, "git@github.com:travisr/nshvll.git"
+set :repository, "git@github.com:travib/wshngtndc.git"
 
 # =============================================================================
 # CAPISTRANO OPTIONS

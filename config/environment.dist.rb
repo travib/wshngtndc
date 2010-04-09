@@ -13,10 +13,10 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
   
   # set base host for mailer
-  config.action_mailer.default_url_options = { :host => "nshvll.org" }
+  config.action_mailer.default_url_options = { :host => "wshngtndc.org" }
   
 end
 
 # Exception Notifier settings
-ExceptionNotification::Notifier.exception_recipients = %w(nshvlltn@gmail.com)
-ExceptionNotification::Notifier.sender_address = %("NSHVLL Error" <app.error@nshvll.org>)
+ExceptionNotification::Notifier.exception_recipients = %w(travisb@vrazzle.com)
+ExceptionNotification::Notifier.sender_address = %("WSHNGTN Error" <app.error@wshngtndc.org>)

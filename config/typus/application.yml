@@ -10,7 +10,7 @@ Category:
   relationships: members
   filters: 
   search: name
-  application: nshvll
+  application: wshngtndc
 
 Member:
   fields:
@@ -23,5 +23,5 @@ Member:
   relationships: categories
   filters: 
   search: name
-  application: nshvll
+  application: wshngtndc
 
