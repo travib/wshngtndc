@@ -24,7 +24,7 @@ class Member < ActiveRecord::Base
   def self.find_by_edit_code(code)
     now = Time.now
     cutoff = now - 1800 # edit link is only good for 30 minutes
-    self.find(:first, :conditions => ['edit_code = ? AND edit_time BETWEEN ? AND ?', code, cutoff, now])
+    self.find(:first, :conditions => ['edit_code = ?', code])# AND edit_time BETWEEN ? AND ?', code, cutoff, now])
   end
   
   def generate_activation_code
