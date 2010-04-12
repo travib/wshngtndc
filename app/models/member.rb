@@ -9,8 +9,7 @@ class Member < ActiveRecord::Base
   
   before_create :generate_activation_code
   
-  named_scope :recent, :order => 'created_at DESC', :limit => 5
-  named_scope :approved, :conditions => ['active = ?', true]
+  named_scope :approved, :conditions => ['active = ?', true], :order => 'created_at DESC'
   
   has_attached_file :image,
                     :styles => { :normal => '200x200#', :small => '100x100#' },
@@ -25,7 +24,7 @@ class Member < ActiveRecord::Base
   def self.find_by_edit_code(code)
     now = Time.now
     cutoff = now - 1800 # edit link is only good for 30 minutes
-    self.find(:first, :conditions => ['edit_code = ?', code])# AND edit_time BETWEEN ? AND ?', code, cutoff, now])
+    self.find(:first, :conditions => ['edit_code = ? AND edit_time BETWEEN ? AND ?', code, cutoff, now])
   end
   
   def generate_activation_code
