@@ -9,6 +9,7 @@ class Member < ActiveRecord::Base
   
   before_create :generate_activation_code
   
+  named_scope :recent, :order => 'created_at DESC', :limit => 5
   named_scope :approved, :conditions => ['active = ?', true], :order => 'created_at DESC'
   
   has_attached_file :image,
