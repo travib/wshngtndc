@@ -38,7 +38,10 @@
   </div><!-- container -->
   <div id="footer">
     <div id="footer-inner">
-      <p class="footer-links"><%= link_to 'Get Listed', new_member_path %></p>
+      <p class="footer-links">
+        <%= link_to 'Get Listed', new_member_path %>
+        <%= link_to 'Edit Your Listing &rarr;', member_generate_edit_path %>
+      </p>
       <p class="byline">
         A Travis Black fork of a <%= link_to 'Travis Roberts', 'http://travisonrails.com', :popup => true %> creation
         &nbsp;&nbsp;|&nbsp;&nbsp;
